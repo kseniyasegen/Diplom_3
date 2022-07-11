@@ -21,17 +21,11 @@ public class MainTest {
     CommonFields commonFields = new CommonFields();
     DeleteUser deleteUser = new DeleteUser();
 
+
     @Before
     public void start() {
-        //Раскомментить браузер, в котором необходим прогон
-
-        //Google Chrome
-        //System.setProperty("webdriver.chrome.driver","/Users/kseniya/IdeaProjects/Diplom_3/chromedriver");
-        //WebDriver driver = new ChromeDriver();
-        // setWebDriver(driver);
-
-        //Yandex Browser
-        System.setProperty("webdriver.chrome.driver", "/Users/kseniya/IdeaProjects/Diplom_3/yandexdriver");
+        //Выбор браузера yandexDriver или chromeDriver
+        System.setProperty("webdriver.chrome.driver", CommonFields.yandexDriver);
         WebDriver driver = new ChromeDriver();
         setWebDriver(driver);
 

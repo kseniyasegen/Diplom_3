@@ -11,5 +11,8 @@ public class CommonFields {
     public String invalidPassword = RandomStringUtils.randomAlphabetic(5);
     public String name = RandomStringUtils.randomAlphabetic(10);
     public static String accessTokenAfterRegister;
+    public static String chromeDriver = "chromedriver";
+    public static String yandexDriver = "yandexdriver";
+
 
 }
